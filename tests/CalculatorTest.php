@@ -4,7 +4,6 @@ use PHPUnit\Framework\TestCase;
 
 class CalculatorTest extends TestCase
 {
-
     public function testInstanceOfCalculator()
     {
         $calculator = new \revision6\calculator\Calculator();
