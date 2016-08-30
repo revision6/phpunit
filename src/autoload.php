@@ -7,13 +7,13 @@ spl_autoload_register(
         static $classes = null;
         if ($classes === null) {
             $classes = array(
-                'revision6\\calculator\\calculator' => '/Calculator.php',
+                'revision6\\calculator\\calculator' => 'Calculator.php',
             );
         }
 
         $cn = strtolower($class);
         if (isset($classes[$cn])) {
-            require __DIR__.$classes[$cn];
+            require __DIR__."/".$classes[$cn];
         }
     },
     true,
