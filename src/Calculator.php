@@ -34,7 +34,7 @@ class Calculator
 
     public function calculate()
     {
-        if (!count($this->values) >= 2) {
+        if (!count($this->values) > 1) {
             return false;
         }
 

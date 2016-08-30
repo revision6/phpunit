@@ -4,9 +4,13 @@ include_once 'src/autoload.php';
 
 $calculator = new \revision6\calculator\Calculator();
 
-$result = $calculator->setOperand('-')->addValue(1)->addValue(1)->calculate();
+$result = $calculator
+    ->setOperand('-')
+    ->addValue(2)
+    ->addValue(1)
+    ->calculate();
 
-if (!$result == false) {
+if ($result == false) {
     echo "ERROR DURING CALCULATION";
     exit;
 }
