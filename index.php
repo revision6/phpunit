@@ -8,6 +8,7 @@ $result = $calculator
     ->setOperand('-')
     ->addValue(2)
     ->addValue(1)
+    ->addValue(3)
     ->calculate();
 
 if ($result == false) {
