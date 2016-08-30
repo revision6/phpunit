@@ -44,6 +44,12 @@ class CalculatorTest extends TestCase
     public function testError()
     {
         $calculator = new \revision6\calculator\Calculator();
-        $this->assertEquals(false, $calculator->addValue(1)->addValue(1)->setOperand('*')->calculate());
+        $this->assertEquals(
+            false,
+            $calculator
+                ->addValue(1)
+                ->addValue(1)
+                ->setOperand('*')
+                ->calculate());
     }
 }
