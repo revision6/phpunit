@@ -17,3 +17,8 @@ composer.lock
 
 # build
 build/
+
+# tools
+phpDocumentor.phar
+phpunit.phar
+docs/api/phpdoc-cache*

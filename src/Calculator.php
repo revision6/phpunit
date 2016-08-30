@@ -5,7 +5,7 @@
  *
  * PHP version 5
  *
- * @package phpunit
+ * @package    phpunit
  * @subpackage Calculator
  * @author     Christopher Bölter
  * @copyright  revision6
@@ -21,7 +21,7 @@ namespace revision6\calculator;
  *
  * Do the calculation for the given input
  *
- * @package phpunit
+ * @package    phpunit
  * @subpackage Calculator
  * @author     Christopher Bölter
  */
@@ -51,6 +51,8 @@ class Calculator
     /**
      * Set the Operand
      *
+     * @param string $operand The operand for this instance
+     *
      * @return Calculator
      */
     public function setOperand($operand)
@@ -62,6 +64,8 @@ class Calculator
 
     /**
      * Adds a value the the values array
+     *
+     * @param int|float $value The value paramater for the operation
      *
      * @return Calculator
      */
@@ -77,7 +81,8 @@ class Calculator
      *
      * @return array
      */
-    public function getValues() {
+    public function getValues()
+    {
         return $this->values;
     }
 
@@ -86,7 +91,8 @@ class Calculator
      *
      * @return string
      */
-    public function getOperand() {
+    public function getOperand()
+    {
         return $this->operand;
     }
 
