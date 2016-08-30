@@ -16,13 +16,12 @@ if ($result == false) {
     exit;
 }
 
+echo "<h1>Substract Calculation</h1>";
 echo "RESULT: ".$result."<br>";
 echo "OPERATION EXECUTED: ".implode(' '.$calculator->getOperand().' ', $calculator->getValues());
 
 
-//
 echo "<br><br>";
-
 
 
 $calculator = new \revision6\calculator\Calculator();
@@ -39,5 +38,6 @@ if ($resultAddition == false) {
     exit;
 }
 
+echo "<h1>Addition Calculation</h1>";
 echo "RESULT: ".$resultAddition."<br>";
 echo "OPERATION EXECUTED: ".implode(' '.$calculator->getOperand().' ', $calculator->getValues());
