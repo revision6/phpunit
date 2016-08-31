@@ -6,7 +6,7 @@
  * PHP version 5
  *
  * @package phpunit
- * @subpackage autpload
+ * @subpackage autoload
  * @author     Christopher Bölter
  * @copyright  revision6
  * @license    LGPL.
