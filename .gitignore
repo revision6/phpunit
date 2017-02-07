@@ -25,3 +25,4 @@ docs/api/phpdoc-cache*
 
 # Excluded Files
 notme.md
+doNotTrackMe.md
