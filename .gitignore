@@ -22,3 +22,6 @@ build/
 phpDocumentor.phar
 phpunit.phar
 docs/api/phpdoc-cache*
+
+# Excluded Files
+notme.md
