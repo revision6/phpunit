@@ -1,1 +1,2 @@
-Welcome to the develop-branch
+Welcome to the develop-branch!
+This is a new line
