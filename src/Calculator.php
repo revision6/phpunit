@@ -39,7 +39,7 @@ class Calculator
      *
      * @var array
      */
-    protected $values = [];
+    protected $valuesToUseForCalculation = [];
 
     /**
      * Stores the calculation result
@@ -71,7 +71,7 @@ class Calculator
      */
     public function addValue($value)
     {
-        $this->values[] = $value;
+        $this->valuesToUseForCalculation[] = $value;
 
         return $this;
     }
@@ -83,7 +83,7 @@ class Calculator
      */
     public function getValues()
     {
-        return $this->values;
+        return $this->valuesToUseForCalculation;
     }
 
     /**
@@ -103,11 +103,11 @@ class Calculator
      */
     public function calculate()
     {
-        if (!count($this->values) > 1) {
+        if (!count($this->valuesToUseForCalculation) > 1) {
             return false;
         }
 
-        $values       = $this->values;
+        $values       = $this->valuesToUseForCalculation;
         $this->result = $values[0];
         unset($values[0]);
 
