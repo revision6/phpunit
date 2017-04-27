@@ -24,5 +24,4 @@ phpunit.phar
 docs/api/phpdoc-cache*
 
 # Excluded Files
-notme.md
-doNotTrackMe.md
+bla.txt
